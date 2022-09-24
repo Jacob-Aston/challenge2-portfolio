@@ -1,0 +1,45 @@
+html {
+    background-color: gray;
+}
+
+h1 {
+}
+
+h2 {
+
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+}
+
+.hero::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(60%);
+}
+
+.hero-content {
+    position: relative;
+}
