@@ -28,6 +28,9 @@ body {
     position: relative;
     width: 100vw;
     height: 40vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 .hero::before {
@@ -49,11 +52,22 @@ body {
 }
 
 aside {
-    display: flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column;
+flex-grow: 1;
 }
 
-main {
+.main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.box {
+    box-sizing: border-box;  
+    flex-basis: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    color: blue;
+    background-color: black;
 }
