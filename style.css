@@ -4,6 +4,14 @@ html {
     margin: 0;
 }
 
+.container {
+    display: grid;
+    height: 1vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr .5fr repeat( 9 / .2fr);
+    grid-area:
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -12,16 +20,16 @@ nav {
     margin: 0;
 }
 
-.hero {
+#hero {
     position: relative;
     width: 100vw;
-    height: 40vh;
+    height:10vh;
     /* display: flex;
     justify-content: center;
     align-items: center; */
 }
 
-.hero::before {
+#hero::before {
     content: " ";
     position: absolute;
     top: 0;
@@ -35,6 +43,37 @@ nav {
     /* filter: brightness(60%); */
 }
 
-.hero-content {
-    position: relative;
+#sidebar {
+    background-color: aqua;
+}
+
+#aboutMe {
+    background-color: aquamarine;
+}
+
+#app1 {
+    background-color: aliceblue;
+}
+
+#app2 {
+    background-color: azure;
+}
+
+#app3 {
+    background-color: antiquewhite;
+}
+
+#app4 {
+    background-color: beige;
+}
+
+#app5 {
+    background-color: bisque;
+}
+
+#contactInfo {
+    background-color: blanchedalmond;
+}
+footer {
+    background-color: cornsilk;
 }
