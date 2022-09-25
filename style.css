@@ -4,24 +4,12 @@ html {
     margin: 0;
 }
 
-h1 {
-}
-
-h2 {
-
-}
-
-header {
+nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color:lightskyblue;
     margin: 0;
-}
-
-body {
-    margin: 0;
-    padding: 0;
 }
 
 .hero {
@@ -49,25 +37,4 @@ body {
 
 .hero-content {
     position: relative;
-}
-
-aside {
-display: flex;
-flex-direction: column;
-flex-grow: 1;
-}
-
-.main {
-    display: flex;
-    flex-direction: row;
-}
-
-.box {
-    box-sizing: border-box;  
-    flex-basis: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-grow: 3;
-    color: blue;
-    background-color: black;
 }
