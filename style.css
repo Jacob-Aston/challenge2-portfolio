@@ -1,79 +1,77 @@
 html {
     background-color: lightgray;
-    box-sizing: border-box;
-    margin: 0;
 }
 
 .container {
     display: grid;
-    height: 1vh;
     grid-template-columns: 1fr;
-    grid-template-rows: .2fr .5fr repeat( 9 / .2fr);
-    grid-area:
+    grid-template-rows: 1fr 3fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "nav"
+        "hero"
+        "sidebar"
+        "aboutMe"
+        "app1"
+        "app2"
+        "app3"
+        "app4"
+        "app5"
+        "contactInfo"
+        "footer";
+        gap: .2rem ;
 }
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    grid-area: nav;
     background-color:lightskyblue;
-    margin: 0;
 }
 
 #hero {
-    position: relative;
-    width: 100vw;
-    height:10vh;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    grid-area: hero;
+    background-color: seagreen;
 }
 
-#hero::before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(./assets/greatSaltLakeReef.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    /* filter: brightness(60%); */
-}
 
 #sidebar {
     background-color: aqua;
+    grid-area: sidebar;
 }
 
 #aboutMe {
     background-color: aquamarine;
+    grid-area: aboutMe;
 }
 
 #app1 {
     background-color: aliceblue;
+    grid-area: app1;
 }
 
 #app2 {
     background-color: azure;
+    grid-area: app2;
 }
 
 #app3 {
     background-color: antiquewhite;
+    grid-area: app3;
 }
 
 #app4 {
     background-color: beige;
+    grid-area: app4;
 }
 
 #app5 {
     background-color: bisque;
+    grid-area: app5;
 }
 
 #contactInfo {
     background-color: blanchedalmond;
+    grid-area: contactInfo;
 }
 footer {
     background-color: cornsilk;
+    grid-area: footer;
 }
