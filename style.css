@@ -5,7 +5,7 @@ html {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr .3fr 1fr .3fr 1fr 1fr 1fr 1fr 1fr .3fr 1fr 1fr;
     grid-template-areas:
         "nav"
         "hero"
@@ -26,11 +26,20 @@ html {
 nav {
     grid-area: nav;
     background-color:lightskyblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#navLinks {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0;
 }
 
 #hero {
     grid-area: hero;
-    background-color: seagreen;
+
 }
 
 
