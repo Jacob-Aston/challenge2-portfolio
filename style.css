@@ -6,7 +6,7 @@ html {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr .3fr 1fr .3fr 2fr 1fr 1fr 1fr 1fr .3fr 1fr 1fr;
+    grid-template-rows: 1fr 200px .3fr 1fr .3fr 2fr 1fr 1fr 1fr 1fr .3fr 1fr 1fr;
     grid-template-areas:
         "nav"
         "hero"
@@ -40,7 +40,12 @@ nav {
 
 #hero {
     grid-area: hero;
+}
 
+#hero img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
 }
 
 
