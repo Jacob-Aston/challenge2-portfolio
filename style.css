@@ -45,13 +45,13 @@ nav {
 }
 
 #side1 {
-    background-color: aqua;
+    background-color: darkslategrey;
     grid-area: side1;
     margin-top: 25px;
 }
 
 #side2 {
-    background-color: tan;
+    background-color: blue;
     grid-area: side2;
     margin-top: 25px;
 }
@@ -63,7 +63,7 @@ nav {
 }
 
 #aboutMe {
-    background-color: aquamarine;
+    background-color: darkgrey;
     grid-area: aboutMe;
     font-size: large;
 }
@@ -136,4 +136,10 @@ nav {
 footer {
     background-color: cornsilk;
     grid-area: footer;
+}
+
+@media (min-width: 440px) {
+    html {
+        background-color: black;
+    }
 }
