@@ -6,7 +6,7 @@ html {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 200px .3fr 1fr .3fr 2fr 1fr 1fr 1fr 1fr .3fr 1fr 1fr;
+    grid-template-rows: 1fr 200px .3fr 1fr .3fr 200px 1fr 1fr 1fr 1fr .3fr 1fr 1fr;
     grid-template-areas:
         "nav"
         "hero"
@@ -72,6 +72,22 @@ nav {
 #app1 {
     background-color: aliceblue;
     grid-area: app1;
+    position: relative;
+    color: whitesmoke;
+    font-size: xx-large;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+#app1 img {
+    display: block;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
 }
 
 #app2 {
