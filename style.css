@@ -117,7 +117,15 @@ nav {
 }
 
 #app3 img {
-    object-position: center;
+    object-position: 0px -1250px;
+}
+
+#app4 img {
+    object-position: 0px -175px;
+}
+
+#app5 img {
+    object-position: 0 -400px;
 }
 
 #contactInfo {
