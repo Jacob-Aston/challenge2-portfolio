@@ -117,15 +117,15 @@ nav {
 }
 
 #app3 img {
-    object-position: 0px -1250px;
+    object-position: center;
 }
 
 #app4 img {
-    object-position: 0px -175px;
+    object-position: center;
 }
 
 #app5 img {
-    object-position: 0 -400px;
+    object-position: center;
 }
 
 #contactInfo {
@@ -141,5 +141,33 @@ footer {
 @media (min-width: 440px) {
     html {
         background-color: black;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-template-rows: auto 350px repeat( 4 / auto );
+        grid-template-areas:
+            "nav nav"
+            "hero hero"
+            "side1 aboutMe"
+            "side2 apps"
+            "side3 contactInfo"
+            "footer footer";
+            gap: .2rem ;    
+    }
+    #aboutMe {
+        margin-top: 25px;
+    }
+    #apps {
+        margin-top: 25px;
+    }
+    #contactInfo {
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:1024px) {
+    .app2 {
+        flex-basis: 50%;
     }
 }
