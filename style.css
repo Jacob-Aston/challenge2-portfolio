@@ -73,7 +73,7 @@ nav {
     background-color: aliceblue;
     grid-area: app1;
     position: relative;
-    color: whitesmoke;
+    color: rgb(0, 173, 204);
     font-size: xx-large;
 }
 
@@ -81,11 +81,13 @@ nav {
     position: absolute;
     bottom: 8px;
     right: 16px;
+    text-decoration: underline;
 }
 
 #app1 img {
     display: block;
     object-fit: cover;
+    object-position: top;
     height: 200px;
     width: 100%;
 }
