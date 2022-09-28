@@ -26,12 +26,20 @@ nav {
     display: flex;
     align-items: center;
     flex-direction: column;
+
 }
 
 #navLinks {
     list-style-type: none;
     margin: 0%;
-    padding: 0;
+    padding: 0px;
+}
+
+#navLinks li{
+box-sizing: border-box;
+background-color: white;
+border: solid black 2px;
+margin: 5px;
 }
 
 #hero {
@@ -149,6 +157,11 @@ footer {
     html {
         background-color: white;
     }
+
+    #navlinks {
+        flex-direction: row;
+    }
+
     .container {
         display: grid;
         grid-template-columns: 200px auto;
