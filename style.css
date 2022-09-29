@@ -17,7 +17,7 @@ html {
         "side3"
         "contactInfo"
         "footer";
-        gap: .2rem ;
+    gap: .2rem ;
 }
 
 nav {
@@ -26,7 +26,6 @@ nav {
     display: flex;
     align-items: center;
     flex-direction: column;
-
 }
 
 #navLinks {
@@ -173,7 +172,7 @@ footer {
             "side2 apps"
             "side3 contactInfo"
             "footer footer";
-            gap: .2rem ;    
+        gap: .2rem ;    
     }
     #aboutMe {
         margin-top: 25px;
